@@ -1,0 +1,15 @@
+const express = require('express');
+const router = express.Router();
+const consultationController = require('../controller/consultationController');
+router.post('/addconsult',consultationController.addconsultation);
+router.post('/addconsultPara',consultationController.addconsultationPara);
+router.get('/getconsult/:childId/:doctorId',consultationController.getlastCon);
+router.get('/getconsultPara/:childId/:paramedicalId',consultationController.getlastConPara);
+router.get('/getinfos/:childId',consultationController.getinfos);
+router.get('/getconspara/:childId',consultationController.allconsultationsPara);
+router.get('/getcons/:childId',consultationController.allconsultations);
+router.get('/getdetailscons/:id',consultationController.getone);
+router.get('/gettasks/:paramedicalId',consultationController.gettasks);
+router.get('/gettaskss/:id',consultationController.gettaskss);
+router.get('/gettaskschils/:childId',consultationController.gettaskschilds);
+module.exports = router;

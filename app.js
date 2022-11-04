@@ -114,4 +114,4 @@ app.use((req, res, next) => {
 
 
 
-app.listen(3000 || 5000)
+app.listen(process.env.PORT || 3000)

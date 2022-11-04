@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const childTNDController = require('../controller/childTNDController');
+const childTNDController = require('../controller/ChildTNDController');
 router.post('/addchild/:parent',childTNDController.addChild);
 router.get('/getchilds/:parent',childTNDController.getChildrens)
 router.patch('/upchild/:id',childTNDController.updateechild)

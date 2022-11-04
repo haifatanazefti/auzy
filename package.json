@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "server": "nodemon server.js",
     "start": "node app.js",
+    "server": "nodemon app.js"
   },
    "engines": {
     "node": "15.x"

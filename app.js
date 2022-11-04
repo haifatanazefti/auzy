@@ -33,7 +33,7 @@ const childRoutes = require('./routes/ChildTNDRoutes');
 app.use('/api', childRoutes);
 
 // import  routes for the disorders
-const disordersRoutes = require('./routes/DisordersTNDRoutes');
+const disordersRoutes = require('./routes/disordersTNDRoutes');
 app.use('/api', disordersRoutes);
 
 // import  routes for the planning

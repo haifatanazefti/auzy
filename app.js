@@ -33,8 +33,8 @@ app.use('/api', MoodRoute);
 //app.use('/api', childRoutes);
 
 // import  routes for the disorders
-const disordersRoutes = require('./routes/disordersTNDRoutes');
-app.use('/api', disordersRoutes);
+//const disordersRoutes = require('./routes/disordersTNDRoutes');
+//app.use('/api', disordersRoutes);
 
 // import  routes for the planning
 const planningRoutes = require('./routes/AvailablityRoutes');

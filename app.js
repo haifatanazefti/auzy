@@ -25,7 +25,7 @@ const MoodRoute = require('./routes/MoodLogRoutes');
 app.use('/api', MoodRoute);
 
 // import  routes for the parents
-const parentRoutes = require('./routes/parentRoutes');
+const parentRoutes = require('./routes/parentRoutes.js');
 app.use('/api', parentRoutes);
 
 // import  routes for the child

@@ -29,8 +29,8 @@ app.use('/api', MoodRoute);
 //app.use('/api', parentRoutes);
 
 // import  routes for the child
-//const childRoutes = require('./routes/childTNDRoutes');
-//app.use('/api', childRoutes);
+const childRoutes = require('./routes/childTNDRoutes');
+app.use('/api', childRoutes);
 
 // import  routes for the disorders
 //const disordersRoutes = require('./routes/disordersTNDRoutes');

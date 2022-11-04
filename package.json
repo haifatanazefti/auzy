@@ -28,6 +28,7 @@
     "smtp": "^0.1.4"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "validator": "^13.7.0"
   }
 }

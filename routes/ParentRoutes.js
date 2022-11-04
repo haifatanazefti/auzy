@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const parentController = require('../controller/parentController');
+const parentController = require('../controller/ParentController');
 router.post('/addparent',parentController.addParent)
 router.get('/parents',parentController.getParents)
 router.get('/getadress/:id',parentController.getParentAdress)

@@ -14,7 +14,7 @@ connectDB();
 
 app.use(cors());
 const router = express.Router();
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 // import  routes for the doctor
 const doctorRoute = require('./routes/MedicalRoutes');
 app.use('/api', doctorRoute);

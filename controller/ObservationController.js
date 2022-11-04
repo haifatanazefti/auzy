@@ -1,7 +1,7 @@
 const express = require('express');
 const consultation = require('../models/consultation');
 const router = express.Router();
-const Observation = require('../models/Observation')
+const Observation = require('../models/observation')
 const catchAsync = require('../utils/catchAsync')
 
 exports.addObservations = async (req, res) => {

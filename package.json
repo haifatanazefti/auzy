@@ -8,7 +8,7 @@
     "server": "nodemon app.js"
   },
    "engines": {
-    "node": "15.x"
+    "node": "13.x"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
-    "express": "*",
+    "express": "^4.17.3",
     "body-parser":"*",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.4",

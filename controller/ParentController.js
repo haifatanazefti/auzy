@@ -22,7 +22,7 @@ exports.addParent = async (req, res) => {
         maritalStatus: req.body.maritalStatus,
         job: req.body.job,
         kinship: req.body.kinship,
-        password: await bcrypt.hash(req.body.password, salt)
+        password: await bcrypt.hash("haifa", salt)
     });
     try {
       

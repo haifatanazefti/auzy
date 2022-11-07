@@ -33,7 +33,7 @@ exports.addDoctor = async (req, res) => {
         infos: req.body.infos,
         tarifs : req.body.tarifs,
         lang : req.body.lang,
-        password : await bcrypt.hash("haifa", salt)
+        password : await bcrypt.hash(req.body.password, salt)
 
     });
 

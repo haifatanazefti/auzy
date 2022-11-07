@@ -5,7 +5,7 @@ var ObjectID = require('mongodb').ObjectID
 const Medical = require('../models/Medical');
 const Doctor = require('../models/Medical')
 const catchAsync = require('../utils/catchAsync')
-const bycrypt = require('bcryptjs')
+const bycrypt = require('bcrypt')
 var jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 

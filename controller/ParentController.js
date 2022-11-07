@@ -8,7 +8,7 @@ const AppError = require('../config/appError');
 const sendEmail = require('../config/email');
 exports.addParent = async (req, res) => {
      // generate salt to hash password
-     const salt = await bcrypt.genSalt(10);
+     const salt = await bcrypt.genSaltSync(10);;
     const parent = new Parent({
         firstName: req.body.firstName,
         lastName: req.body.lastName,

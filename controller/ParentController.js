@@ -112,6 +112,7 @@ const signToken = (id) => {
 exports.loginParent = catchAsync(async (req, res) => {
     const body = req.body;
     const parent = await Parent.findOne({ email: body.email });
+     console.log(body.email);
     if (parent) {
       // check user password with hashed password stored in the database
       const validPassword = await bcrypt.compare(body.password, parent.password);

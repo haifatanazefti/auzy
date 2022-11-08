@@ -6,7 +6,16 @@ var cors = require('cors');
 require('dotenv/config');
 
 const app = express();
+app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }))
+
+//pour accepter le requet des route distinct 
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    next();
+  });
 const connectDB = require('./config/db.js')
 // load config
 dotenv.config({path: './config/config.env'})
@@ -104,13 +113,7 @@ app.use('/api', testanswerRoutes);
 const adminRoutes = require('./routes/adminRoutes');
 app.use('/api', adminRoutes);
 
-//pour accepter le requet des route distinct 
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-    next();
-  });
+
 
 
 
